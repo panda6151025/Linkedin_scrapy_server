@@ -21,7 +21,7 @@ app.post("/getInfo", async (req, res) => {
   await scraper.setup();
 
   const result = await scraper.run(url);
-
+  res.json(result);
   console.log(result);
 });
 
