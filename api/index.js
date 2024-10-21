@@ -13,9 +13,9 @@ app.get("/", async (req, res) => {
 });
 app.post("/getInfo", async (req, res) => {
   console.log(req.body);
-  const { url, lib_at } = req.body;
+  const { url, li_at } = req.body;
   const scraper = new LinkedInProfileScraper({
-    sessionCookieValue: lib_at,
+    sessionCookieValue: li_at,
     keepAlive: false,
   });
 
