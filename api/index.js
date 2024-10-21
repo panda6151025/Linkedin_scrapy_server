@@ -12,6 +12,7 @@ app.get("/", async (req, res) => {
   return res.json({ flag: "true", message: "server is working" });
 });
 app.post("/getInfo", async (req, res) => {
+  console.log(req.body);
   const { url, lib_at } = req.body;
   const scraper = new LinkedInProfileScraper({
     sessionCookieValue: lib_at,
