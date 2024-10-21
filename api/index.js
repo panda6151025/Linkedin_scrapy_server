@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
+const { LinkedInProfileScraper } = require("linkedin-profile-scraper");
 const app = express();
 const PORT = 5000;
 
